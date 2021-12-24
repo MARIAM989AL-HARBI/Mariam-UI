@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appmariam3"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="50dp"
+            android:textColor="@color/black"
+            android:text="welcome Sign in "
+            android:textAlignment="center"
+            android:textSize="70dp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="40dp"
+            android:backgroundTint="#4267B2"
+            app:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:id="@+id/facebook_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/facebook_img"
+                    android:layout_width="45dp"
+                    android:layout_height="60dp"
+                    android:background="@color/black"
+                    app:srcCompat="@drawable/facebook" />
+
+                <TextView
+                    android:id="@+id/facebook_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="40dp"
+                    android:text="Sign in with Facebook:)"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:backgroundTint="#E4487E"
+            android:layout_height="60dp"
+            android:layout_margin="40dp"
+            app:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:id="@+id/instagram_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/instagram_img"
+                    android:layout_width="45dp"
+                    android:layout_height="60dp"
+                    android:background="@color/black"
+                    android:layout_marginLeft="10dp"
+                    app:srcCompat="@drawable/instagram" />
+
+                <TextView
+                    android:id="@+id/instagram_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="40dp"
+                    android:text="Sign in with Instagram:)"
+                    android:textColor="#1E1D1D"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
